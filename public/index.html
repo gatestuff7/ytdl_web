@@ -17,8 +17,7 @@
 <script>
     $(function () {
 
-       	    var vid = document.getElementById("myVideo");
-	    vid.playbackRate = 0.5;
+       	    
 	    const queryString = window.location.search;
 	    console.log(queryString);
             const urlParams = new URLSearchParams(queryString);
@@ -59,7 +58,8 @@
                 video[0].load();
             });
 
-       
+	var vid = document.getElementById("myVideo");
+        vid.playbackRate = 3.0;       
 
     });
 </script>
