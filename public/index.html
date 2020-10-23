@@ -6,8 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
-<button onclick="setPlaySpeed()" type="button">Set video to be play in slow motion</button><br> 
+ 
 
 <video id="myVideo" width="800" height="600" controls>
     <source src="" type="video/mp4"/>
@@ -57,16 +56,16 @@
                 var video = $("video");
                 video.attr('src', stream_url);
                 video[0].load();
+		var vid = document.getElementById("myVideo");
+		vid.playbackRate = 3.0;
             });
 
 	
 
           
     });
-var vid = document.getElementById("myVideo");
-$function setPlaySpeed() { 
-  vid.playbackRate = 3.0;
-} 
+
+
 </script>
 
 </body>
